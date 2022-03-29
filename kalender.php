@@ -8,9 +8,9 @@
             $hari = array("Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu");
             $bulan = "Maret";
             $tahun = 2022;
-            $b = 28;
-            $c = 1;
-            echo "<h2>$bulan    $tahun</h2>";
+            $x = 28;
+            $y = 1;
+            echo "<h2>$bulan&emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; $tahun &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;</h2>";
             for($i = 1; $i <= 1; $i++) {
                 echo "<tr>";
                 for($j = 0; $j < 7; $j++) {
@@ -22,19 +22,17 @@
             for($i = 1; $i <= 5; $i++) {
                 echo "<tr>";
                 for($j = 1; $j <= 7; $j++) {
-                    if($b >= 29) {
-                        echo "<td>". $c ."</td>";
-                        $c++;
+                    if($x >= 29) {
+                        echo "<td>". $y ."</td>";
+                        $y++;
                     } else {
-                        echo "<td>". $b ."</td>";
-                        $b++; 
+                        echo "<td>". $x ."</td>";
+                        $x++; 
                     }
-                    if($c == 32) {
+                    if($y == 32) {
                         break;
                     }
                 }
-                echo "</tr>";
-                echo "<br>";
             }
         ?>
         </table>
